@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import image from "./assets/image.jpg";
 import SearchField from "./components/SearchField";
+import Temperature from "./components/Temperature";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         fontFamily={`"Exo 2", sans-serif`}
       >
         <SearchField />
+        <Temperature />
       </Box>
     </Box>
   );
