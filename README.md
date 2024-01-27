@@ -14,7 +14,7 @@ The Weather App is a simple and user-friendly application that provides real-tim
 
 ## Technologies Used
 
-- **Frontend**: HTML5, CSS3, JavaScript, React.js
+- **Frontend**: React.js, Chakra UI
 
 - **APIs**: Utilizes a weather API (e.g., OpenWeatherMap API)
 
