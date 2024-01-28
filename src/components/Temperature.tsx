@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import { useWeather } from "../context/context";
 import { FaTemperatureLow, FaTemperatureHigh } from "react-icons/fa";
 import { WiHumidity } from "react-icons/wi";
@@ -26,7 +26,7 @@ const Temperature = () => {
               <strong>{weather.temp}°</strong>
               <small>C</small>
             </Text>
-            <Text fontSize={"1.4rem"} letterSpacing={3}>
+            <Text fontSize={"1.4rem"} letterSpacing={3} as={"h1"}>
               {weather.name}
             </Text>
           </Box>
@@ -60,9 +60,9 @@ const Temperature = () => {
           </Box>
         </>
       ) : (
-        <Text fontSize={["1rem", "1.2rem"]}>
+        <Heading fontSize={["1rem", "1.2rem"]} as="h3">
           "Please enter a valid city or country name..."
-        </Text>
+        </Heading>
       )}
     </Box>
   );
