@@ -19,11 +19,12 @@ const App = () => {
           background: "rgba(67,237,28,0.1)",
           backdropFilter: "blur(11px)",
         }}
-        height={"70vh"}
+        height={"max-content"}
         width={["90%", "70%", "50%", "30%"]}
         rounded={10}
         color={"white"}
         fontFamily={`"Exo 2", sans-serif`}
+        boxShadow="10px 10px 2000px green"
       >
         <SearchField />
         <Temperature />
