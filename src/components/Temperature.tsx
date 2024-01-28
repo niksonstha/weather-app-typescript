@@ -12,7 +12,6 @@ const Temperature = () => {
       justifyContent={"center"}
       alignItems={"center"}
       mt={5}
-      color={"#AFC8AD"}
       mb={5}
     >
       {weather.name ? (
@@ -61,7 +60,7 @@ const Temperature = () => {
           </Box>
         </>
       ) : (
-        <Text fontSize={"1.23rem"}>
+        <Text fontSize={["1rem", "1.2rem"]}>
           "Please enter a valid city or country name..."
         </Text>
       )}

@@ -2,6 +2,7 @@ import { Box } from "@chakra-ui/react";
 import { useState } from "react";
 import { fetchWeatherData } from "../api/api";
 import { Weather, useWeather } from "../context/context";
+import "./SearchField.css";
 
 const SearchField = () => {
   const [city, setCity] = useState("");
@@ -28,13 +29,14 @@ const SearchField = () => {
   return (
     <Box width="90%" mx={"auto"} mt={5} border={"none"}>
       <input
+        className="input-search"
         placeholder="City, Country..."
         style={{
           width: "100%",
           padding: "10px",
           borderRadius: "20px",
           backgroundColor: "transparent",
-          borderBottom: "2px solid green",
+          borderBottom: "2px solid black",
           outline: "none",
         }}
         value={city}

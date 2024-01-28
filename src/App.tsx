@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import image from "./assets/image.jpg";
+import image from "./assets/image2.jpg";
 import SearchField from "./components/SearchField";
 import Temperature from "./components/Temperature";
 
@@ -15,16 +15,17 @@ const App = () => {
       height={"100vh"}
     >
       <Box
+        className="weatherUi"
         style={{
-          background: "rgba(67,237,28,0.1)",
-          backdropFilter: "blur(11px)",
+          background: "rgba( 229, 5, 5, 0.25)",
+          backdropFilter: "blur(4px)",
         }}
         height={"max-content"}
         width={["90%", "70%", "50%", "30%"]}
         rounded={10}
-        color={"white"}
         fontFamily={`"Exo 2", sans-serif`}
-        boxShadow="10px 10px 2000px green"
+        boxShadow="10px 10px 2000px black"
+        color={"black"}
       >
         <SearchField />
         <Temperature />
